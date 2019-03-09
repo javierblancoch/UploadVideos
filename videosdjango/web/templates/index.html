@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>List Videos</title>
+</head>
+<body>
+	<center>
+		{% for i in content %}
+		<video width="500" height="300" controls>
+				<source src="{{ i.recurso.url }}" type="video/mp4">
+		</video><br><br>
+		{% endfor %}
+	</center>
+</body>
+</html>
